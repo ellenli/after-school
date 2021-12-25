@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: "Inconsolata", "SF Mono", monospace;
+			line-height: 1.7;
+			font-size: 1rem;
+			background: #000;
+			color: #fff;
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+			font-kerning: normal;
+			margin: 2rem auto;
+			max-width: 28rem;
+			display: block;
+			align-items: center;
+		}
+
+		a, a:visited, a:active {
+			color: #fff;
+			text-decoration: underline;
+			text-decoration-color: #fff;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-size: inherit;
+			font-weight: 600;
+		}
+		h1 {
+			font-family: 'VT323', monospace;
+			font-size: 2rem; -webkit-animation: flicker 2s infinite;}
+		@-webkit-keyframes flicker
+		{
+		0% {opacity:0;}
+		9% {opacity:0;}
+		10% {opacity:.5;}
+		13% {opacity:0;}
+		20% {opacity:.5;}
+		25% {opacity:1;}
+		}
+
+
+		p, ul, div, hr, h1, h2, h3, hr { margin: 1rem 2rem; }
+
+		header {
+			display: inline-block;
+			width: 100%;
+			border-bottom: 0px solid #ccc;
+		}
+		header h1 {
+			display: block;
+			margin: 0 2rem;
+			padding:0;
+			float:left;
+		}
+		header nav p {
+			display: inline-flex;
+			align-content: flex-end;
+			float:right;
+			margin: 0 2rem;
+		}
+
+		img {width: 100%}
+
+		ul li, ol li {
+			margin-left: 1rem;
+			padding-left: 0rem;
+		}
+
+		hr {
+			border: 0;
+			height: 0;
+			margin: 2rem 2rem auto 2rem;
+			border-bottom: 1px solid #ccc;
+		}
+
+		blockquote {
+			border-left: 1px solid #ccc;
+			padding: 0 0 0 2rem;
+			margin: 0 2rem;
+		}
+
+		textarea {resize: none;}
+
+		.upcoming {
+			opacity: 0.5;
+		}
+			.films > li {
+				margin: auto auto;
+				display: flex;
+				list-style-type: none;
+				align-items: flex-start;
+			}
+			.films li > span:first-of-type {
+				min-width: 4rem;
+			}
+			a.rsvp {
+				display: inline-block;
+				margin: 0;
+				padding: 2px 4px;
+				line-height: 1em;
+				text-decoration: none;
+				background: yellow;
+				color: #000;
+			}
+
+
+		</style>
+		<title>After School Film Club</title>
+	</head>
+	<body>
+		<main>
+			<h1>After School Film Club</h1>
+			<p>Friends celebrating foreign film and BIPOC talent. We host film screenings the first Wednesday of every month.</p>
+			<h2>2022</h2>
+				<ul class="films">
+					<li>
+            <span>Jan 5</span>
+            <span>3 Idiots</span>
+					</li>
+					<li>
+						<span>Feb 2</span>
+						<span>I Am Not Your Negro</span>
+					</li>
+					<li>
+						<span>Mar 2</span>
+						<span>Shaolin Soccer</span>
+					</li>
+					<li>
+						<span>Apr 6</span>
+						<span>Akira</span>
+					</li>
+        </ul>
+		</main>
+		<hr>
+		<footer>
+			<p>Organized by <a href="https://ellen.li">Ellen</a> and friends at <a href="https://wearerecess.ca/">Recess</a>.</p>
+		</footer>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-27811032-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</body>
+</html>

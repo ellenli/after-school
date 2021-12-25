@@ -3,130 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-		@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-
-		body {
-			font-family: "Inconsolata", "SF Mono", monospace;
-			line-height: 1.7;
-			font-size: 1rem;
-			background: #111;
-			color: #fff;
-			-webkit-font-smoothing: antialiased;
-			text-rendering: optimizeLegibility;
-			font-kerning: normal;
-			margin: 2rem auto;
-			max-width: 28rem;
-			display: block;
-			align-items: center;
-		}
-
-		a, a:visited, a:active {
-			color: #fff;
-			text-decoration: underline;
-			text-decoration-color: #fff;
-		}
-		a:hover {
-			text-decoration: none;
-		}
-
-		h1, h2, h3, h4, h5, h6 {
-			font-size: inherit;
-			font-weight: 600;
-		}
-		h1 {
-			font-family: 'VT323', monospace;
-			font-size: 1.7rem;
-			-webkit-animation: flicker 2s infinite;
-		}
-		@-webkit-keyframes flicker
-		{
-		0% {opacity:0;}
-		9% {opacity:0;}
-		10% {opacity:.5;}
-		13% {opacity:0;}
-		20% {opacity:.5;}
-		25% {opacity:1;}
-		}
-
-
-		p, ul, div, hr, h1, h2, h3, hr { margin: 1rem 2rem; }
-
-		header {
-			display: inline-block;
-			width: 100%;
-			border-bottom: 0px solid #ccc;
-		}
-		header h1 {
-			display: block;
-			margin: 0 2rem;
-			padding:0;
-			float:left;
-		}
-		header nav p {
-			display: inline-flex;
-			align-content: flex-end;
-			float:right;
-			margin: 0 2rem;
-		}
-
-		img {width: 100%}
-
-		ul li, ol li {
-			margin-left: 1rem;
-			padding-left: 0rem;
-		}
-
-		hr {
-			border: 0;
-			height: 0;
-			margin: 2rem 2rem auto 2rem;
-			border-bottom: 1px solid #ccc;
-		}
-
-		blockquote {
-			border-left: 1px solid #ccc;
-			padding: 0 0 0 2rem;
-			margin: 0 2rem;
-		}
-
-		textarea {resize: none;}
-
-		.upcoming {
-			opacity: 0.5;
-		}
-			.films > li {
-				margin: auto auto;
-				display: flex;
-				list-style-type: none;
-				align-items: flex-start;
-			}
-			.films li > span:first-of-type {
-				min-width: 4rem;
-			}
-			a.rsvp {
-				display: inline-block;
-				margin: 0;
-				padding: 2px 4px;
-				line-height: 1em;
-				text-decoration: none;
-				background: yellow;
-				color: #000;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>After School Film Club</title>
+		<meta name="description" content="Friends celebrating foreign films and BIPOC talent. We host film screenings the first Wednesday of every month.">
 	</head>
 	<body>
 		<main>
 			<h1>After School Film Club</h1>
-			<p>Friends celebrating foreign film and BIPOC talent. We host film screenings the first Wednesday of every month.</p>
+			<p>Friends celebrating foreign films and BIPOC talent. We host film screenings the first Wednesday of every month. Screenings will be virtual until futher notice.</p>
 			<h2>2022 Screenings</h2>
 				<ul class="films">
 					<li>
@@ -149,12 +33,13 @@
 						<span>May 4</span>
 						<span>TBD</span>
 					</li>
-
         </ul>
+				<!-- <h2>Join Us</h2>
+				<p><input type="email" class="join" placeholder="your@email.com"></input></p> -->
 		</main>
 		<hr>
 		<footer>
-			<p>Run by <a href="https://ellen.li" target="_blank">Ellen</a> and friends at <a href="https://wearerecess.ca/" target="_blank">Recess</a>.</p>
+			<p>Hosted by <a href="https://ellen.li" target="_blank">Ellen</a> and friends at <a href="https://wearerecess.ca/" target="_blank">Recess</a>.</p>
 		</footer>
 	</body>
 </html>

@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-body {
+body, input {
   font-family: "Inconsolata", "SF Mono", monospace;
   line-height: 1.7;
   font-size: 1rem;
@@ -20,6 +20,12 @@ body {
   max-width: 28rem;
   display: block;
   align-items: center;
+  border: 1px solid #fff;
+}
+@media only screen and (max-width: 600px){
+  body {
+    border: 0px solid #fff;
+  }
 }
 
 a, a:visited, a:active {
@@ -30,11 +36,13 @@ a, a:visited, a:active {
 a:hover {
   text-decoration: none;
 }
-
+p {text-align: justify;}
 
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -51,7 +59,7 @@ h1 {
   25% {opacity:1;}
 }
 
-p, ul, div, hr, h1, h2, h3, hr { margin: 1rem 2rem; }
+p, ul, div, hr, h1, h2, h3, hr { margin: 1rem 2rem;}
 
 header {
   display: inline-block;
@@ -81,8 +89,8 @@ ul li, ol li {
 hr {
   border: 0;
   height: 0;
-  margin: 2rem 2rem auto 2rem;
-  border-bottom: 1px solid #ccc;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+  border-bottom: 1px solid #fff;
 }
 
 blockquote {
@@ -91,7 +99,7 @@ blockquote {
   margin: 0 2rem;
 }
 
-textarea {resize: none;}
+textarea, input {resize: none;margin:0;}
 
 .upcoming {
   opacity: 0.5;
@@ -105,22 +113,29 @@ textarea {resize: none;}
 .films li > span:first-of-type {
   min-width: 4rem;
 }
-a.rsvp {
+.button {
   display: inline-block;
-  margin: 0;
-  padding: 2px 4px;
-  line-height: 1em;
+  margin: 0 0 1.5rem 0;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
   text-decoration: none;
-  background: yellow;
-  color: #000;
+  background: black;
+  border:1px solid #fff;
+  color: #fff;
 }
 .join {
   display: block;
   width: 100%;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  border: 1px solid white;
-  background: black;
-  color: white;
-  padding: 1rem;
+  border: 0px solid white;
+  background: white;
+  color: black;
+  padding: 0.4rem 0.6rem;
+}
+.check {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5rem;
+  align-items: baseline;
 }

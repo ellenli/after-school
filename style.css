@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
-* {
+*, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: #111;
 }
 
-body, input {
+main, input {
   font-family: "Inconsolata", "SF Mono", monospace;
   line-height: 1.7;
   font-size: 1rem;
@@ -22,9 +23,34 @@ body, input {
   align-items: center;
   border: 1px solid #fff;
 }
+footer p {
+  font-family: "Inconsolata", "SF Mono", monospace;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  margin: 0;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+footer {
+  display: block;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  max-width: 28rem;
+  margin: 2rem auto 3rem auto;
+}
+
 @media only screen and (max-width: 600px){
-  body {
+  main {
     border: 0px solid #fff;
+  }
+  footer {
+    margin: 0rem auto 2rem auto;
   }
 }
 
@@ -50,6 +76,7 @@ h1 {
   font-size: 1.7rem;
   -webkit-animation: flicker 2s infinite;
 }
+
 @-webkit-keyframes flicker {
   0% {opacity:0;}
   9% {opacity:0;}
@@ -58,7 +85,6 @@ h1 {
   20% {opacity:.5;}
   25% {opacity:1;}
 }
-
 p, ul, div, hr, h1, h2, h3, hr { margin: 1rem 2rem;}
 
 header {
@@ -119,7 +145,7 @@ textarea, input {resize: none;margin:0;}
   width: 100%;
   padding: 0.4rem 0.6rem;
   text-decoration: none;
-  background: black;
+  background: #111;
   border:1px solid #fff;
   color: #fff;
 }
@@ -130,7 +156,7 @@ textarea, input {resize: none;margin:0;}
   text-decoration: none;
   border: 0px solid white;
   background: white;
-  color: black;
+  color: #111;
   padding: 0.4rem 0.6rem;
 }
 .check {

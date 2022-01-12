@@ -161,7 +161,7 @@ textarea, input {resize: none;margin:0;}
 }
 .check {
   display: grid;
-  grid-template-columns: 1em auto;
+  grid-template-columns: 1rem auto;
   gap: 0.5rem;
   align-items: baseline;
 }

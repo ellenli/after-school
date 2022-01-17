@@ -148,6 +148,7 @@ textarea, input {resize: none;margin:0;}
   background: #111;
   border:1px solid #fff;
   color: #fff;
+  border-radius: 0px;
 }
 .join {
   display: block;

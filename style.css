@@ -139,7 +139,16 @@ textarea, input {resize: none;margin:0;}
   align-items: flex-start;
 }
 .films li > span:first-of-type {
-  min-width: 4rem;
+  min-width: 3rem;
+}
+.past {
+  opacity: 0.5;
+}
+.past > span:first-of-type{
+  text-decoration: line-through;
+}
+.past a {
+  text-decoration: none;
 }
 .button, input[type=checkbox] {
   display: inline-block;
